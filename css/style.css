@@ -57,16 +57,29 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  padding: 2rem 2rem 2rem 2rem;
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
   box-shadow: 2px 2px 10px 2px aqua;
+  background-size: cover;
+  padding: 5rem 0 0;
+  max-width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -74,8 +87,13 @@ body {
   align-self: center;
 }
 
-.card--pro {
-  background: white;
+.card__info {
+  padding: 2rem;
+  background: linear-gradient(gray, gray);
+}
+
+.card--pro{
+  background-color: white;
 }
 
 .list__nos {
@@ -151,9 +169,13 @@ td {
   font-size: 1.8rem;
 }
 
+.card__tittle{
+  font-size: 2rem;
+}
+
 .card__description {
   margin-bottom: 1.8rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .article__nos {
@@ -342,7 +364,7 @@ footer {
 }
 
 .card__image {
-  max-width: 40%;
+  max-width: 90%;
 }
 
 /* tabla */
@@ -416,6 +438,18 @@ footer {
 
 .ul-tittle .ul-tittle__li:nth-child(9) {
   animation-delay: 0.9s;
+}
+
+/* Animacion tarjetas */
+@media (hover) {
+  .card__info {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card__info {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
 }
 
 /* Media quarries */
