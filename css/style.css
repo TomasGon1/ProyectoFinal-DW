@@ -53,12 +53,25 @@ body {
   margin-bottom: 3rem;
 }
 
+.card-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
 .card {
-  margin: 2rem;
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 5px 5px 15px 5px aqua;
-  display: inline-block;
+  box-shadow: 2px 2px 10px 2px aqua;
+}
+
+.card img {
+  order: -1;
+  align-self: center;
 }
 
 .card--pro {
@@ -140,6 +153,7 @@ td {
 
 .card__description {
   margin-bottom: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .article__nos {
@@ -327,6 +341,10 @@ footer {
   display: inline-block;
 }
 
+.card__image {
+  max-width: 40%;
+}
+
 /* tabla */
 .table__item {
   background-color: gray;
@@ -401,5 +419,3 @@ footer {
 }
 
 /* Media quarries */
-
-
