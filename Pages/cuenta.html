@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- estilo CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <!-- Google fonts -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- googlefont -->
     <link
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
@@ -19,12 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- logotipo -->
-    <title>DECOgamer</title>
+    <title>Cuenta - DECOgamer</title>
   </head>
   <body>
     <header class="header">
-      <!-- seccion1 -->
       <ul class="ul-tittle">
         <li class="ul-tittle__li"><strong>D</strong></li>
         <li class="ul-tittle__li"><strong>E</strong></li>
@@ -40,24 +37,22 @@
       <nav class="navPrincipal">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="index.html">Inicio</a>
+            <a class="nav__link" href="../index.html">Inicio</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="Pages/contactos-faq.html"
-              >Contactos/FAQ</a
-            >
+            <a class="nav__link" href="contactos-faq.html">Contactos/FAQ</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="Pages/nosotros.html">Nosotros</a>
+            <a class="nav__link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="Pages/productos.html">Productos</a>
+            <a class="nav__link" href="productos.html">Productos</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Iniciar sesion</a>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="Pages/cuenta.html">Mi cuenta</a>
+                <a class="nav__link" href="cuenta.html">Mi cuenta</a>
               </li>
             </ul>
           </li>
@@ -66,46 +61,54 @@
     </header>
 
     <main class="main__1">
-      <section class="container__sec">
-        <!-- seccion2 -->
-        <h2 class="h2__init">
-          <strong>DECO</strong>gamer la tienda de decoracion gamer mas famosa!
-        </h2>
-        <img
-          class="img-1"
-          src="Imagenes/1366_2000.jpeg"
-          alt="Imagen setup gamer"
-        />
-        <p class="p1">
-          Dale originalidad a tu setup, decoralo con tus personajes favoritos,
-          Funkos, poster y sillas gamer para la mejor comodidad.
-        </p>
-        <a class="button" href="Pages/productos.html">COMPRA AQUI!</a>
+      <section class="container__ac">
+        <h2 class="h2__init">Cuenta</h2>
+        <form action="">
+          <fieldset>
+            <legend>Acceder</legend>
+            <div>
+              <label for="Usuario">Usuario o Email<span>:</span></label>
+              <input type="text" placeholder="Usuario o Email" id="usuario" />
+            </div>
+            <div>
+              <label for="contrasena">Contraseña<span>:</span></label>
+              <input type="password" placeholder="Contraseña" id="contrasena" />
+            </div>
+            <div>
+              <input class="button" type="submit" value="Acceder" />
+            </div>
+          </fieldset>
+        </form>
       </section>
 
-      <div class="wave">
-        <img src="Imagenes/wave.svg" alt="" />
-      </div>
-
-      <main class="main">
-        <!-- seccion3 -->
-        <div class="container">
-          <h3><strong>DECO</strong>gamer, siempre del lado del gamer!</h3>
-          <img
-            class="img-2"
-            src="Imagenes/81de8fea3bb413d664423ad6ef5dabc8.jpg"
-            alt="Imagen setup gamer 2"
-          />
-          <p>
-            Con nuestros productos de la mejor calidad y precio, lleva tu sitio
-            de juego al maximo nivel!! Podes revisar nuestro catalogo y si no
-            encontras lo que buscas contactanos!!
-          </p>
-          <a class="button" href="Pages/productos.html">COMPRA AQUI!</a>
-          <a class="button" href="Pages/contactos-faq.html">ESCRIBINOS!</a>
-        </div>
-      </main>
+      <section class="container__re">
+        <form action="">
+          <fieldset>
+            <legend>Registrarse</legend>
+            <div>
+              <label for="correo">Dirección Email<span>:</span></label>
+              <input type="email" placeholder="Email" id="correo" />
+            </div>
+            <div>
+              <label for="contrasena2">Contraseña<span>:</span></label>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                id="contrasena2"
+              />
+            </div>
+            <div class="terms">
+              Acepta terminos y condiciones
+              <input type="checkbox" name="acepta" value="1" required />
+            </div>
+            <div>
+              <input class="button" type="submit" value="Registrarse" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
+
     <!-- footer -->
     <footer>
       <div class="footer-sm">
