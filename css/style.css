@@ -15,6 +15,7 @@ body {
   font-family: "Righteous", cursive;
   color: black;
   background-color: #000b76;
+  min-height: 100vh;
 }
 
 .container {
@@ -92,7 +93,7 @@ body {
   background: linear-gradient(gray, gray);
 }
 
-.card--pro{
+.card--pro {
   background-color: white;
 }
 
@@ -169,7 +170,7 @@ td {
   font-size: 1.8rem;
 }
 
-.card__tittle{
+.card__tittle {
   font-size: 2rem;
 }
 
