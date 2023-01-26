@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- estilo CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="../cs/style.css" />
-    <!-- googlefonts -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- googlefont -->
     <link
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Nosotros - DECOgamer</title>
+    <title>Cuenta - DECOgamer</title>
   </head>
   <body>
     <header
@@ -65,65 +65,60 @@
     </header>
 
     <main class="main__1">
-      <div class="container-fluid mt-5">
-        <div class="border border-3 border-dark p-2">
-          <h2 class="fs-1 mb-4 text-center" style="color: gray">Conocenos!</h2>
-          <article class="fs-3 mb-3" style="color: gray">
-            Somos una tienda dedicada a la decoracion para los setup gamer.
-            Iniciamos hace poco con este proyecto que fue creciendo y nos
-            volvimos experimentados en el rubro. Somos una tienda que buscamos
-            mejorar y traer la mejor calidad a nuetros clientes!! queremos
-            seguir expandiendonos en el mercado gamer, traerles a ustedes mas
-            productos de la mejor calidad!!
-          </article>
-        </div>
-        <div class="border border-3 border-dark p-2 mt-4">
-          <div>
-            <h2 class="fs-1 mb-4 text-center" style="color: gray">
-              Aqui la lista de los productos que pensamos incorporar
-            </h2>
-          </div>
-          <div class="mb-4">
-            <ul>
-              <li class="fs-3 mb-3" style="color: gray">
-                Teclados, Mouses y Pads
-              </li>
-              <li class="fs-3 mb-3" style="color: gray">
-                Escritorios, Soporte de Auriculares y Gabinetes
-              </li>
-              <li class="fs-3 mb-3" style="color: gray">
-                Auriculares y Microfonos
-              </li>
-              <li class="fs-3 mb-3" style="color: gray">
-                Componentes: Tarjeta grafica, Placa Madre, Procesadores,
-                Fuentes, Memoria RAM y Discos HDD y SDD
-              </li>
-            </ul>
-          </div>
+      <section class="container-fluid mt-5">
+        <h2 class="fs-1 mb-4 text-center" style="color: gray">Cuenta</h2>
+        <form class="border border-3 border-dark p-2" action="">
+          <fieldset>
+            <legend class="fs-1" style="color: gray">Acceder</legend>
+            <div>
+              <label class="fs-3" style="color: gray" for="Usuario"
+                >Usuario o Email<span>:</span></label
+              >
+              <input type="text" placeholder="Usuario o Email" id="usuario" />
+            </div>
+            <div>
+              <label class="fs-3" style="color: gray" for="contrasena"
+                >Contraseña<span>:</span></label
+              >
+              <input type="password" placeholder="Contraseña" id="contrasena" />
+            </div>
+            <div>
+              <input class="button" type="submit" value="Acceder" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
 
-          <div class="container">
-            <h3 class="fs-3 mb-2" style="color: gray">
-              Si tenes alguna sugerencia podes contactarnos haciendo
-              <a href="contactos-faq.html">CLICK AQUI!</a>
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid text-center mt-5">
-        <h3 class="fs-2 mb-2" style="color: gray">Contamos con local ficico!! Visitanos!!</h3>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8588168916413!2d-64.19287398255615!3d-31.418015700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2814094f89f%3A0xeaf81bb76bccc3b!2sDuarte%20Quir%C3%B3s%20377%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1673305620850!5m2!1ses-419!2sar"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
+      <section class="container-fluid mt-5">
+        <form class="border border-3 border-dark p-2" action="">
+          <fieldset>
+            <legend class="fs-1" style="color: gray">Registrarse</legend>
+            <div>
+              <label class="fs-3" style="color: gray" for="correo"
+                >Dirección Email<span>:</span></label
+              >
+              <input type="email" placeholder="Email" id="correo" />
+            </div>
+            <div>
+              <label class="fs-3" style="color: gray" for="contrasena2"
+                >Contraseña<span>:</span></label
+              >
+              <input
+                type="password"
+                placeholder="Contraseña"
+                id="contrasena2"
+              />
+            </div>
+            <div class="fs-4" style="color: gray">
+              Acepta terminos y condiciones
+              <input type="checkbox" name="acepta" value="1" required />
+            </div>
+            <div>
+              <input class="button" type="submit" value="Registrarse" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <!-- footer -->
