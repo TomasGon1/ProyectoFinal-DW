@@ -18,42 +18,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container__sec {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.container__sec-2 {
-  text-align: center;
-}
-
-.container__ac {
-  margin-bottom: 5rem;
-}
-
-.container__re {
-  margin-bottom: 5rem;
-}
-
-.container__nos {
-  margin-bottom: 5rem;
-}
-
-.table {
-  margin-bottom: 5rem;
-  background-color: white;
-}
-
-.table__sub {
-  margin-bottom: 3rem;
-}
-
 .card-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -217,7 +181,7 @@ td {
   margin-bottom: -2.5rem;
 }
 
-/* menu */
+/* NavBar */
 .navPrincipal {
   width: 80%;
   margin: 2rem auto;
