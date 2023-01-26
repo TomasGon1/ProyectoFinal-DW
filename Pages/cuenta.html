@@ -22,7 +22,10 @@
     <title>Cuenta - DECOgamer</title>
   </head>
   <body>
-    <header class="header">
+    <header
+      class="d-flex flex-column z-2 position-sticky top-0 mb-2"
+      style="background-color: #000b76"
+    >
       <ul class="ul-tittle">
         <li class="ul-tittle__li"><strong>D</strong></li>
         <li class="ul-tittle__li"><strong>E</strong></li>
@@ -63,16 +66,16 @@
 
     <main class="main__1">
       <section class="container-fluid mt-5">
-        <h2 class="h2__init">Cuenta</h2>
+        <h2 class="fs-1 mb-4 text-center" style="color: gray">Cuenta</h2>
         <form class="border border-3 border-dark p-2" action="">
           <fieldset>
-            <legend>Acceder</legend>
+            <legend class="fs-1" style="color: gray;">Acceder</legend>
             <div>
-              <label for="Usuario">Usuario o Email<span>:</span></label>
+              <label class="fs-3" style="color: gray;" for="Usuario">Usuario o Email<span>:</span></label>
               <input type="text" placeholder="Usuario o Email" id="usuario" />
             </div>
             <div>
-              <label for="contrasena">Contraseña<span>:</span></label>
+              <label class="fs-3" style="color: gray;" for="contrasena">Contraseña<span>:</span></label>
               <input type="password" placeholder="Contraseña" id="contrasena" />
             </div>
             <div>
@@ -85,20 +88,20 @@
       <section class="container-fluid mt-5">
         <form class="border border-3 border-dark p-2" action="">
           <fieldset>
-            <legend>Registrarse</legend>
+            <legend class="fs-1" style="color: gray;">Registrarse</legend>
             <div>
-              <label for="correo">Dirección Email<span>:</span></label>
+              <label class="fs-3" style="color: gray;" for="correo">Dirección Email<span>:</span></label>
               <input type="email" placeholder="Email" id="correo" />
             </div>
             <div>
-              <label for="contrasena2">Contraseña<span>:</span></label>
+              <label class="fs-3" style="color: gray;" for="contrasena2">Contraseña<span>:</span></label>
               <input
                 type="password"
                 placeholder="Contraseña"
                 id="contrasena2"
               />
             </div>
-            <div class="terms">
+            <div class="fs-4" style="color: gray;">
               Acepta terminos y condiciones
               <input type="checkbox" name="acepta" value="1" required />
             </div>
