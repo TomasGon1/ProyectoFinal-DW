@@ -1,4 +1,14 @@
-/* estilo global */
+/* Tipografia */
+.card__tittle {
+  font-size: 2rem;
+}
+
+.card__description {
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+/* Globals */
 html {
   font-size: 70%;
   box-sizing: border-box;
@@ -7,6 +17,8 @@ html {
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: none;
 }
 
@@ -42,7 +54,10 @@ body {
   transition: transform 500ms ease;
 }
 
-.card:hover,
+.card:hover {
+  transform: scale(1.05);
+}
+
 .card:focus-within {
   transform: scale(1.05);
 }
@@ -57,7 +72,7 @@ body {
   background: linear-gradient(gray, gray);
 }
 
-.card--pro {
+.card__pro {
   background-color: white;
 }
 
@@ -65,29 +80,62 @@ iframe {
   max-width: 60%;
 }
 
-/* tipografia */
-.card__tittle {
-  font-size: 2rem;
+/* Botones */
+.button {
+  background-color: aqua;
+  color: black;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2rem;
+  width: 30%;
+  text-align: center;
+  border: 1px solid;
+  font-family: "Righteous", cursive;
+  transition: all 1s;
+}
+.button:hover {
+  color: aqua;
+  background-color: black;
+}
+.button:focus {
+  color: aqua;
+  background-color: black;
 }
 
-.card__description {
-  margin-bottom: 1.8rem;
-  font-size: 1.5rem;
+/* Imagenes */
+.img-1 {
+  max-width: 40%;
 }
 
-/* NavBar */
+.img-2 {
+  max-width: 40%;
+}
+
+.img__wha {
+  display: inline-block;
+}
+
+.img__fa {
+  display: inline-block;
+}
+
+.card__image {
+  max-width: 90%;
+}
+
+/* Navbar */
 .navPrincipal {
   width: 80%;
   margin: 2rem auto;
-}
-
-.navPrincipal {
   list-style-type: none;
   text-align: center;
   font-size: 0;
 }
 
-.navPrincipal > .nav__list .nav__item {
+.navPrincipal .nav__list .nav__item {
   display: inline-block;
   width: 20%;
   position: relative;
@@ -99,7 +147,7 @@ iframe {
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  color: grey;
+  color: gray;
 }
 
 .navPrincipal .nav__item:hover .nav__link {
@@ -138,7 +186,7 @@ iframe {
   background: black;
 }
 
-/* estilo del footer */
+/* Footer */
 footer {
   background-color: black;
   padding-top: 1rem;
@@ -148,11 +196,9 @@ footer {
   background-color: #212121;
   color: white;
 }
-
 .footer-sm a {
   color: white;
 }
-
 .footer-sm a i {
   font-size: 1rem;
   margin-left: 1rem;
@@ -172,58 +218,12 @@ footer {
   color: gray;
   font-weight: 400;
 }
-
 .footer-bottom__copyright a {
   color: gray;
   text-decoration: none;
 }
 
-/* botones */
-.button {
-  background-color: aqua;
-  color: black;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  font-size: 1.6rem;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 2rem;
-  width: 30%;
-  text-align: center;
-  border: 1px solid;
-  font-family: "Righteous", cursive;
-  transition: all 1s;
-}
-
-.button:hover {
-  color: aqua;
-  background-color: black;
-}
-
-.button:focus {
-  color: aqua;
-  background-color: black;
-}
-
-/* imagenes */
-.img-1 {
-  max-width: 40%;
-}
-
-.img-2 {
-  max-width: 40%;
-}
-
-.img__wha,
-.img__fa {
-  display: inline-block;
-}
-
-.card__image {
-  max-width: 90%;
-}
-
-/* Animacion Titulo */
+/* Animacion del titulo */
 .ul-tittle {
   display: flex;
   align-items: center;
@@ -231,7 +231,6 @@ footer {
   margin: 0;
   padding: 0;
 }
-
 .ul-tittle .ul-tittle__li {
   list-style: none;
   color: gray;
@@ -254,44 +253,35 @@ footer {
     text-shadow: 0 0 7px lightblue, 0 0 50px blue;
   }
 }
-
 .ul-tittle .ul-tittle__li:nth-child(1) {
   animation-delay: 0.1s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(2) {
   animation-delay: 0.2s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(3) {
   animation-delay: 0.3s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(4) {
   animation-delay: 0.4s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(5) {
   animation-delay: 0.5s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(6) {
   animation-delay: 0.6s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(7) {
   animation-delay: 0.7s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(8) {
   animation-delay: 0.8s;
 }
-
 .ul-tittle .ul-tittle__li:nth-child(9) {
   animation-delay: 0.9s;
 }
 
-/* Animacion tarjetas */
+/* Animacion Tarjetas */
 @media (hover) {
   .card__info {
     transform: translateY(65%);
@@ -303,4 +293,4 @@ footer {
   }
 }
 
-/* Media quarries */
+/*# sourceMappingURL=style.css.map */

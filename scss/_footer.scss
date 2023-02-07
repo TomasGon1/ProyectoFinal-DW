@@ -1,0 +1,39 @@
+/* Footer */
+footer {
+  background-color: black;
+  padding-top: 1rem;
+}
+
+.footer-sm {
+  background-color: #212121;
+  color: white;
+
+  a {
+    color: white;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.footer-sm__icons {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.footer-bottom {
+  padding: 1.5rem 0;
+}
+
+.footer-bottom__copyright {
+  text-align: center;
+  color: $primary-color;
+  font-weight: 400;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
