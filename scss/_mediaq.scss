@@ -1,0 +1,58 @@
+/* media query */
+@media (max-width: 1024px) {
+  .ul-tittle {
+    .ul-tittle__li {
+      font-size: 35px;
+      letter-spacing: -15px;
+      padding-right: -5px;
+    }
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .nav__list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: $france-blue;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navPrincipal {
+    .nav__list {
+      .nav__item {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+    }
+
+    .nav__list {
+      .nav__item {
+        .nav__link {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .nav__item {
+    .nav__link {
+      background: none;
+      color: white;
+    }
+
+    .nav__link.active {
+      background: none;
+      color: white;
+    }
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
