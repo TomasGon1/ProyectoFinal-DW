@@ -69,7 +69,7 @@ body {
 
 .card__info {
   padding: 2rem;
-  background: linear-gradient(gray, gray);
+  background: linear-gradient(lightgray, lightgray);
 }
 
 .card__pro {
@@ -142,7 +142,7 @@ iframe {
   margin: 0 5px;
 }
 .navPrincipal ul li a {
-  color: gray;
+  color: lightgray;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -177,7 +177,7 @@ iframe {
   height: 40px;
   display: inline-block;
   font-size: 2.2rem;
-  color: gray;
+  color: lightgray;
   position: absolute;
   padding: 5px 40px;
 }
@@ -211,34 +211,34 @@ footer {
 
 .footer-bottom__copyright {
   text-align: center;
-  color: gray;
+  color: lightgray;
   font-weight: 400;
 }
 .footer-bottom__copyright a {
-  color: gray;
+  color: lightgray;
   text-decoration: none;
 }
 
 /* Animacion del titulo */
 .ul-tittle .ul-tittle__li {
   list-style: none;
-  color: gray;
+  color: lightgray;
   font-size: 2.5rem;
   animation: iluminar 1.4s linear infinite;
 }
 
 @keyframes iluminar {
   0% {
-    color: gray;
+    color: lightgray;
     text-shadow: none;
   }
   90% {
-    color: gray;
+    color: lightgray;
     text-shadow: none;
   }
   100% {
-    color: lightblue;
-    text-shadow: 0 0 7px lightblue, 0 0 50px blue;
+    color: rgb(4, 234, 250);
+    text-shadow: 0 0 7px blue, 0 0 50px blue;
   }
 }
 .ul-tittle .ul-tittle__li:nth-child(1) {
@@ -310,11 +310,11 @@ footer {
   }
   .nav__item .nav__link {
     background: none;
-    color: white;
+    color: lightgray;
   }
   .nav__item .nav__link.active {
     background: none;
-    color: white;
+    color: lightgray;
   }
   #check:checked ~ ul {
     left: 0;
