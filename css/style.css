@@ -154,10 +154,6 @@ iframe {
   color: white;
   transition: 0.5s;
 }
-.nav__item .nav__link.active {
-  background: black;
-  color: white;
-}
 
 .checkbtn {
   font-size: 30px;
@@ -309,10 +305,6 @@ footer {
     font-size: 20px;
   }
   .nav__item .nav__link {
-    background: none;
-    color: lightgray;
-  }
-  .nav__item .nav__link.active {
     background: none;
     color: lightgray;
   }
