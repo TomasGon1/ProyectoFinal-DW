@@ -59,7 +59,7 @@
             <a class="nav__link active" href="../index.html">Inicio</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="contactos-faq.html">Contactos</a>
+            <a class="nav__link" href="contactos-faq.html">Contactos/FAQ</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="productos.html">Productos</a>
@@ -77,43 +77,81 @@
     <!-- seccion 1 -->
     <main class="main__1">
       <section>
-        <div class="container-fluid mt-5">
-          <div class="row">
-            <div class="col-sm-6 mt-4 p-2 border border-3 border-dark">
-              <h2 class="fs-1 mb-3" style="color: lightgray">
-                ¿Tienen local fisico?
-              </h2>
-              <p class="fs-3" style="color: lightgray">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item fs-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                ¿Tienen lugar fisíco?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
                 Si tenemos local, puedes ver su ubicacion haciendo
-                <a href="nosotros.html">click aqui!</a>
-              </p>
+                <a href="nosotros.html">click aqui!</a>.
+              </div>
             </div>
-            <div class="col-sm-6 mt-4 p-2 border border-3 border-dark">
-              <h2 class="fs-1 mb-3" style="color: lightgray">
-                ¿Hacen envios a domicilio?
-              </h2>
-              <p class="fs-3" style="color: lightgray">
+          </div>
+          <div class="accordion-item fs-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ¿Hacen envíos a domicilio?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
                 Si, una vez comprado el producto, puden elegir via cadeteria,
-                que tendra un costo extra, y correo argentino
-              </p>
+                que tendra un costo extra o correo argentino.
+              </div>
             </div>
-            <div class="col-sm-6 mt-4 p-2 border border-3 border-dark">
-              <h2 class="fs-1 mb-3" style="color: lightgray">
-                Si un producto viene fallado ¿Hacen cambio o Reembolsos?
-              </h2>
-              <p class="fs-3" style="color: lightgray">
+          </div>
+          <div class="accordion-item fs-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+              Si un producto viene fallado ¿Hacen cambio o Reembolsos?¿Cuanto tiempo de garantia tienen sus productos?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
                 Si hacemos cambio de producto y si no tenemos el mismo producto
-                te devolvemos el dinero
-              </p>
-            </div>
-            <div class="col-sm-6 mt-4 p-2 border border-3 border-dark">
-              <h2 class="fs-1 mb-3" style="color: lightgray">
-                ¿Cuanto tiempo de garantia tienen sus productos?
-              </h2>
-              <p class="fs-3" style="color: lightgray">
-                Dependiendo del producto que compres aunque la mayoria tiene de
-                3 a 6 meses de garantia
-              </p>
+                te devolvemos el dinero. En cuanto a la garantia, depende del producto que compres aunque la mayoria tiene de
+                3 a 6 meses de garantia.
+              </div>
             </div>
           </div>
         </div>
