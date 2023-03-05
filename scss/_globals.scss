@@ -17,6 +17,8 @@ body {
   font-family: "Righteous", cursive;
   color: black;
   background-color: $france-blue;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 
@@ -74,6 +76,10 @@ body {
 
 iframe {
   max-width: 60%;
+}
+
+.main__2 {
+  background-color: white;
 }
 
 /* Botones */
