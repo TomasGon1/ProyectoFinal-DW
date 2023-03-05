@@ -91,10 +91,6 @@ iframe {
   margin-top: -0.5rem;
 }
 
-#container {
-  overflow-wrap: break-word;
-}
-
 /* Botones */
 .button {
   background-color: aqua;
