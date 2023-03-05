@@ -80,23 +80,29 @@ iframe {
 
 .main__2 {
   background-color: white;
+  margin-top: -0.5rem;
+}
+
+#container{
+  overflow-wrap: break-word;
 }
 
 /* Botones */
 .button {
   background-color: $aqua;
   color: black;
-  padding: 1rem;
+  padding: 0.7rem;
   margin-top: 1.5rem;
   font-size: 1.6rem;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 30%;
   text-align: center;
   border: 1px solid;
   font-family: "Righteous", cursive;
   transition: all 1s;
+
 
   &:hover {
     color: $aqua;
