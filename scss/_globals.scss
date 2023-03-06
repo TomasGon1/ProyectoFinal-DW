@@ -98,6 +98,19 @@ iframe {
   background-color: $aqua;
 }
 
+.input__1{
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+.input__2{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 0.5rem;
+ margin-top: -0.5rem;
+}
+
 /* Botones */
 .button {
   background-color: $aqua;
