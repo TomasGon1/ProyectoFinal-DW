@@ -164,22 +164,34 @@
           <h3 class="fs-1 mb-4 text-center tip_color">Consultanos!</h3>
 
           <form class="border border-3 border-dark p-2" action="">
-            <fieldset class="text-center">
+            <fieldset>
               <legend class="fs-1 tip_color">Contactanos!</legend>
-              <div>
-                <label class="fs-3 mb-2 tip_color" for="nombre"
-                  >Usuario<span>:</span></label
-                >
-                <input type="text" placeholder="Tu usuario" id="nombre" />
-              </div>
-              <div>
-                <label class="fs-3 mb-2 tip_color" for="correo"
-                  >Correo<span>:</span></label
-                >
-                <input type="email" placeholder="Tu email" id="correo" />
+              <div class="ctc_new">
+                <div>
+                  <label class="fs-3 mb-2 tip_color" for="nombre"
+                    >Usuario<span>:</span></label
+                  >
+                  <input
+                    class="input__2"
+                    type="text"
+                    placeholder="Tu usuario"
+                    id="nombre"
+                  />
+                </div>
+                <div>
+                  <label class="fs-3 mb-2 tip_color" for="correo"
+                    >Correo<span>:</span></label
+                  >
+                  <input
+                    class="input__2"
+                    type="email"
+                    placeholder="Tu email"
+                    id="correo"
+                  />
+                </div>
               </div>
 
-              <div>
+              <div class="text-center mt-3">
                 <label class="fs-3 mb-2 tip_color" for="mensaje"
                   >Mensaje<span>:</span></label
                 >
@@ -190,11 +202,11 @@
                   rows="10"
                 ></textarea>
               </div>
-              <div class="fs-4 tip_color">
+              <div class="fs-4 text-center tip_color">
                 Acepta terminos y condiciones
                 <input type="checkbox" name="acepta" value="1" required />
               </div>
-              <div>
+              <div class="container mt-2">
                 <input class="button" type="submit" value="Enviar" />
                 <input class="button" type="reset" value="Cancelar" />
               </div>

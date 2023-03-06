@@ -91,11 +91,6 @@ iframe {
   margin-top: -0.5rem;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
 .p__link {
   background-color: aqua;
 }
@@ -104,16 +99,22 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.input__1 {
-  width: 95%;
+.cuenta_fr .input__1 {
+  width: 98%;
   margin-top: 0.5rem;
 }
 
-.btn__cuenta {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+.ctc_new {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ctc_new .input__2 {
+  width: 98%;
+}
+
+textarea {
+  width: 95%;
+  font-size: 1.8rem;
 }
 
 /* Botones */
@@ -137,6 +138,17 @@ iframe {
 .button:focus {
   color: aqua;
   background-color: black;
+}
+
+.btn__cuenta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 /* Imagenes */
