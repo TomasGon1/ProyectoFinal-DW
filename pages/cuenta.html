@@ -81,19 +81,31 @@
         <form class="border border-3 border-dark p-2" action="">
           <fieldset>
             <legend class="fs-1 tip_color">Acceder</legend>
-            <div>
-              <label class="fs-3 tip_color" for="Usuario"
-                >Usuario o Email<span>:</span></label
-              >
-              <input class="input__2" type="text" placeholder="Usuario o Email" id="usuario" />
+            <div class="cuenta_fr">
+              <div>
+                <label class="fs-3 tip_color" for="Usuario"
+                  >Usuario o Email<span>:</span></label
+                >
+                <input
+                  class="input__1"
+                  type="text"
+                  placeholder="Usuario o Email"
+                  id="usuario"
+                />
+              </div>
+              <div>
+                <label class="fs-3 tip_color" for="contrasena"
+                  >Contraseña<span>:</span></label
+                >
+                <input
+                  class="input__1"
+                  type="password"
+                  placeholder="Contraseña"
+                  id="contrasena"
+                />
+              </div>
             </div>
-            <div>
-              <label class="fs-3 tip_color" for="contrasena"
-                >Contraseña<span>:</span></label
-              >
-              <input class="input__2" type="password" placeholder="Contraseña" id="contrasena" />
-            </div>
-            <div class="container">
+            <div class="btn__cuenta">
               <input class="button" type="submit" value="Acceder" />
             </div>
           </fieldset>
@@ -105,28 +117,35 @@
         <form class="border border-3 border-dark p-2" action="">
           <fieldset>
             <legend class="fs-1 tip_color">Registrarse</legend>
-            <div>
-              <label class="fs-3 tip_color" for="correo"
-                >Dirección Email<span>:</span></label
-              >
-              <input class="input__2" type="email" placeholder="Email" id="correo" />
+            <div class="cuenta_fr">
+              <div>
+                <label class="fs-3 tip_color" for="correo"
+                  >Dirección Email<span>:</span></label
+                >
+                <input
+                  class="input__1"
+                  type="email"
+                  placeholder="Email"
+                  id="correo"
+                />
+              </div>
+              <div>
+                <label class="fs-3 tip_color" for="contrasena2"
+                  >Contraseña<span>:</span></label
+                >
+                <input
+                  class="input__1"
+                  type="password"
+                  placeholder="Contraseña"
+                  id="contrasena2"
+                />
+              </div>
             </div>
-            <div>
-              <label class="fs-3 tip_color" for="contrasena2"
-                >Contraseña<span>:</span></label
-              >
-              <input
-              class="input__2"
-                type="password"
-                placeholder="Contraseña"
-                id="contrasena2"
-              />
-            </div>
-            <div class="fs-4 tip_color">
+            <div class="fs-4 mt-3 tip_color">
               Acepta terminos y condiciones
               <input type="checkbox" name="acepta" value="1" required />
             </div>
-            <div class="container">
+            <div class="btn__cuenta">
               <input class="button" type="submit" value="Registrarse" />
             </div>
           </fieldset>
