@@ -9,7 +9,8 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: none;
+  box-sizing: border-box;
+ 
 }
 
 body {
@@ -78,27 +79,27 @@ iframe {
   max-width: 60%;
 }
 
-.main__2 {
+.section-2 {
   background-color: white;
   margin-top: -0.5rem;
 }
 
-.container{
+.container {
   display: flex;
   margin-top: 1rem;
 }
 
-.container_1{
+.container_1 {
   display: flex;
   justify-content: center;
 }
 
-.p__link{
+.p__link {
   background-color: $aqua;
 }
 
 /* Botones */
-.button{
+.button {
   background-color: $aqua;
   color: black;
   display: inline-block;

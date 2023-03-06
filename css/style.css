@@ -23,7 +23,7 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -86,7 +86,7 @@ iframe {
   max-width: 60%;
 }
 
-.main__2 {
+.section-2 {
   background-color: white;
   margin-top: -0.5rem;
 }
@@ -230,6 +230,7 @@ footer {
 
 .footer-bottom__copyright {
   text-align: center;
+  justify-content: center;
   color: lightgray;
   font-weight: 400;
 }
